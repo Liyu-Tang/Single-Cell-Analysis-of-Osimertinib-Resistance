@@ -2,20 +2,19 @@
 
 ## Overview
 
-Osimertinib is a third-generation EGFR inhibitor used to treat
-EGFR-mutant non-small cell lung cancer. However, drug persistence
-and acquired resistance remain major challenges.
+Osimertinib is a targeted therapy used to treat EGFR-mutant lung cancer, but cancer cells can develop drug persistence and acquired resistance during treatment. Understanding the transcriptional changes associated with this adaptation may help identify genes and biological pathways involved in resistance.
 
-This project uses single-cell RNA sequencing to investigate
-transcriptional changes during progressive osimertinib exposure
-in PC9 lung cancer cells.
+In this project, I used single-cell RNA sequencing data from PC9 lung cancer cells exposed to increasing concentrations of osimertinib. The dataset includes untreated control cells, cells collected across progressive dose-escalation conditions, cells adapted to 1.2 µM osimertinib (T1.2), and cells exposed acutely to 1.2 µM osimertinib (P1.2).
+
+I analyzed how gene expression and biological pathway activity change as cells adapt to increasing drug concentrations. Differential expression and pathway analyses were used to identify transcriptional features shared between persistent and adapted cells.
+
+Finally, I used machine learning to distinguish untreated (C) cells from fully adapted (T1.2) cells based on gene expression. Rather than predicting clinical treatment response, the model was used to investigate whether intermediate treatment and acute persister cells increasingly resemble the transcriptional state of fully adapted cells. This provides a way to explore potential molecular features associated with the transition from drug sensitivity toward persistence and acquired resistance.
 
 ## Dataset
 
 Dataset: GSE247684
 
-The dataset contains 4,208 cells across untreated, dose-escalation,
-adapted, and acute drug-treatment conditions.
+This
 
 ## Analysis
 
