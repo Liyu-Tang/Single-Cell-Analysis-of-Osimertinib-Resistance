@@ -12,15 +12,16 @@ Finally, I used machine learning to distinguish untreated (C) cells from fully a
 
 ## Dataset
 
-Dataset: GSE247684
-
-This
+Dataset: GSE247684 from GEO DataSets 
 
 ## Analysis
-
-- Quality control and preprocessing with Scanpy
-- Highly variable gene selection
-- PCA and UMAP
+### Quality control and preprocessing with Scanpy
+  Using the dataset from GEO DataSets, AnnData Object was created and normalizing the logarithmize. 
+### Highly variable gene selection
+The top 2000 highly variable genes are pretty concentrated. 
+### PCA and UMAP
+From the PCA, orig.ident which is the types of cell samples, control, T1.2 etc are pretty even mixed, and the mitochondria percentage count are also spread evenly. 
+From the UMAP, all the cell samples depending on orig.ident are cluster mostly invidually, and the percentage of mitochondria in the samples are also expressive in every cluster. 
 - Leiden clustering
 - Pathway scoring
 - Differential expression
