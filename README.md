@@ -22,7 +22,8 @@ The top 2000 highly variable genes are pretty concentrated.
 ### PCA and UMAP
 From the PCA, orig.ident which is the types of cell samples, control, T1.2 etc are pretty even mixed, and the mitochondria percentage count are also spread evenly. 
 From the UMAP, all the cell samples depending on orig.ident are cluster mostly invidually, and the percentage of mitochondria in the samples are also expressive in every cluster. 
-- Leiden clustering
+### Leiden clustering
+The leiden clustering which shows the discrete cells of k-nearest neighbor (KNN) graph of the high-dimensional data. It shows distinct groups as in different samples are cluster together. 
 - Pathway scoring
 - Differential expression
 - Pathway enrichment
